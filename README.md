@@ -1,27 +1,18 @@
-# Geography
+## CSS Framework
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+Added Bootstrap as the styling framework
 
-## Development server
+ ## How the Application Works 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    1) Select the Region - Asia or Europe 
+    2) Based on the Region, Country will loaded fron the API
+    3) Country details will be loaded in to the second drop down 
+    4) Select the country fron the Country dropdown and click on Load Country button 
+    5) This will dispaly the country details like name, capital, population, currencies, flag in the table 
 
-## Code scaffolding
+## If you ran out of time what else you would have done.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    As i have not worked with NGRX, i have used services to cache the Europe and Asia countries. So only once the countries will be loaded from the API, upon second time it will be loaded from the service. 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    I would have implemented the same logic usign NGRX if i had more time. 
+ 

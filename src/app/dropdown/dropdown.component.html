@@ -1,0 +1,17 @@
+
+ <div class="form-group" [formGroup]= "form">
+<label [for]="labelName"> {{labelName | titlecase}}</label>
+ <select 
+    [name] = "labelName" 
+    [id] = "labelName"
+    (change) = "onDropDownChange()"
+    [formControlName] = "labelName"
+    class = "form-control"
+    >
+    <option
+        *ngFor = "let dropDownOption of dropDownOptions"
+        [value]="dropDownOption"
+        >{{dropDownOption}}</option>
+</select>
+
+
